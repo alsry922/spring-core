@@ -1,7 +1,7 @@
 package hello.core;
 
 import hello.core.discount.DiscountPolicy;
-import hello.core.discount.RateDiscountPoilcy;
+import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
@@ -27,6 +27,6 @@ public class AppConfig {
   }
   @Bean
   public DiscountPolicy discountPolicy() {
-    return new RateDiscountPoilcy();
+    return new RateDiscountPolicy();
   }
 }
